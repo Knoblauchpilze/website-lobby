@@ -1,0 +1,9 @@
+<script lang="ts">
+	import { FlexContainer, StyledLink, StyledTitle } from '$lib/components';
+</script>
+
+<FlexContainer>
+	<StyledTitle text="The totocorpsoftwareinc website" />
+	<StyledLink text="Galactic Sovereign" link="https://gasteropo.de" showAsButton={true} />
+	<StyledLink text="Admin dashboard" link="https://admin.gasteropo.de" showAsButton={true} />
+</FlexContainer>
