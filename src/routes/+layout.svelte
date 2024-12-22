@@ -2,7 +2,7 @@
 	import '$styles/app.css';
 	import { type Snippet } from 'svelte';
 
-	import { HeroContainer } from '$lib/components';
+	import { HeroContainer } from '@totocorpsoftwareinc/frontend-toolkit';
 
 	interface Props {
 		children?: Snippet;
@@ -14,6 +14,6 @@
 <svelte:head>
 	<title>{'totocorpsoftwareinc'}</title>
 </svelte:head>
-<HeroContainer>
+<HeroContainer width={"w-7/12"} height={"h-3/6"}>
 	{@render children?.()}
 </HeroContainer>
