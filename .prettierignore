@@ -10,3 +10,6 @@ yarn.lock
 # this is wrong.
 # For this we disable linting on this file.
 src/app.html
+
+.github
+README.md
