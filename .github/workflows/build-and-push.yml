@@ -29,8 +29,19 @@ jobs:
         # https://stackoverflow.com/questions/58886293/getting-current-branch-and-commit-hash-in-github-action
         run: echo "tag=$(git rev-parse --short $GITHUB_SHA)" >> $GITHUB_OUTPUT
 
+  check-code-style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install modules
+        run: |
+          npm ci
+      - name: Check code style with linter
+        run: |
+          npm run lint
+
   build-and-push-docker-image:
-    needs: [extract-service-tag]
+    needs: [extract-service-tag, check-code-style]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
