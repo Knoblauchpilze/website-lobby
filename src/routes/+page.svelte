@@ -10,4 +10,5 @@
 		showAsButton={true}
 	/>
 	<StyledLink text="Admin dashboard" link="https://admin.gasteropo.de" showAsButton={true} />
+	<StyledLink text="Qwixx sheet" link="https://qwixx.gasteropo.de" showAsButton={true} />
 </FlexContainer>
