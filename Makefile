@@ -3,6 +3,9 @@ GIT_COMMIT_HASH=$(shell git rev-parse --short HEAD)
 NODE_PORT ?= 3001
 SERVER_ORIGIN ?= "http://localhost:3001"
 
+install:
+	npm install
+
 dev:
 	npm run dev -- --open
 
