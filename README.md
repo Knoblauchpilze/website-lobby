@@ -2,7 +2,7 @@
 
 This repository defines the frontend for the homepage of the [gasteropo.de](https://gasteropo.de) website.
 
-It gives options to navigate the various subdomains of the website.
+It gives options to navigate the various subdomains of the website, including the [galactic-sovereign](https://github.com/Knoblauchpilze/galactic-sovereign) browser game and a [score sheet](https://github.com/Knoblauchpilze/qwixx-sheet) to play `qwixx`.
 
 # Badges
 
