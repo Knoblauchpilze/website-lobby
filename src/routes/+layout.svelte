@@ -12,8 +12,8 @@
 </script>
 
 <svelte:head>
-	<title>{'totocorpsoftwareinc'}</title>
+	<title>"totocorpsoftwareinc"</title>
 </svelte:head>
-<HeroContainer width={'w-7/12'} height={'h-3/6'}>
+<HeroContainer width="w-7/12" height="h-3/6">
 	{@render children?.()}
 </HeroContainer>
