@@ -46,6 +46,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Login to Docker Hub
+        if: ${{ github.actor != 'dependabot[bot]' }}
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -57,7 +58,7 @@ jobs:
           file: ./build/website-lobby/Dockerfile
           build-args: |
             GIT_COMMIT_HASH=${{ needs.extract-service-tag.outputs.version }}
-          push: true
+          push: ${{ github.actor != 'dependabot[bot]' }}
           tags: totocorpsoftwareinc/website-lobby:${{ needs.extract-service-tag.outputs.version }}
 
   update-deployment:
