@@ -13,7 +13,7 @@
 		"format": "prettier --write ."
 	},
 	"dependencies": {
-		"@tailwindcss/vite": "^4.0.15",
+		"@tailwindcss/vite": "^4.0.17",
 		"@totocorpsoftwareinc/frontend-toolkit": "^0.0.31"
 	},
 	"devDependencies": {
