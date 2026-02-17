@@ -13,6 +13,7 @@
 		"format": "prettier --write ."
 	},
 	"dependencies": {
+		"@eslint/js": "^10.0.1",
 		"@tailwindcss/vite": "^4.1.18",
 		"@totocorpsoftwareinc/frontend-toolkit": "^0.0.46"
 	},
