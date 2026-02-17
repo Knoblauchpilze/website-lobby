@@ -13,6 +13,7 @@
 		"format": "prettier --write ."
 	},
 	"dependencies": {
+		"@eslint/js": "^10.0.1",
 		"@tailwindcss/vite": "^4.1.18",
 		"@totocorpsoftwareinc/frontend-toolkit": "^0.0.46"
 	},
@@ -22,7 +23,7 @@
 		"@sveltejs/kit": "^2.52.0",
 		"@sveltejs/vite-plugin-svelte": "^6.2.4",
 		"@types/eslint": "^9.6.1",
-		"eslint": "^9.39.2",
+		"eslint": "^10.0.0",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.15.0",
 		"globals": "^17.3.0",
